@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/dist/styles/main.css" />
+    <link rel="stylesheet" href="./assets/dist/styles/dashboard.css" />
+    <link rel="stylesheet" href="./assets/dist/styles/mediaquery.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+      integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+      crossorigin="anonymous"
+    />
+
+    <title>Dashboard | Home</title>
+  </head>
+  <body>
+    <!-- Sidebar Starts -->
+    <div class="slidebar">
+      <div class="container">
+        <div class="brand text-center">Coinklap</div>
+        <nav>
+          <ul class="list-unstyled d-flex flex-column">
+            <li>
+              <a href="dashboard.html" class="nav-link"
+                ><i class="fas fa-home"></i><span>Dashboard</span></a
+              >
+            </li>
+            <li>
+              <a href="dashboard-exchange.html" class="nav-link"
+                ><i class="fas fa-exchange-alt"></i><span>Exchange</span></a
+              >
+            </li>
+            <li>
+              <a href="dashboard-deal1.html" class="nav-link"
+                ><i class="fas fa-file-alt"></i><span>My Deals</span></a
+              >
+            </li>
+            <li>
+              <a href="dashboard-wallet.html" class="nav-link active-sidelink"
+                ><i class="fas fa-piggy-bank"></i><span>My Wallet</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Dashboard Starts -->
+
+    <div class="dashboard-wrapper">
+      <div class="container-fluid">
+        <!-- Top header -->
+        <div class="row"></div>
+        <header>
+          <nav class="d-flex flex-row justify-content-between">
+            <div class="left-sec d-flex flex-row">
+              <div class="align-self-center hamburger" id="slide-btn">
+                <i class="fas fa-chevron-circle-left"></i>
+              </div>
+              <div class="align-self-center header-logo logo-hide">
+                <a href="./dashboard.html"
+                  ><img src="./assets/dist/images/logo-color.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="mid-sec align-self-center">
+              <i class="fas fa-file-alt"></i>
+              My Deals
+            </div>
+            <div class="right-sec d-flex flex-row align-self-center">
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="menu-btn"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="./assets/dist/images/avatar.jpg"
+                    alt="User Avatar"
+                  />
+                </button>
+                <div class="dropdown-menu dropdown-menu-right menu-li">
+                  <button
+                    class="dropdown-item"
+                    type="button"
+                    onclick="window.location.href = '/dashboard-profile.html';"
+                  >
+                    <i class="fas fa-user"></i>Profile
+                  </button>
+                  <button class="dropdown-item" type="button">
+                    <i class="fas fa-cog"></i>Setting
+                  </button>
+                  <button
+                    class="dropdown-item"
+                    type="button"
+                    onclick="window.location.href = '/index.html';"
+                  >
+                    <i class="fas fa-sign-out-alt"></i>Logout
+                  </button>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+      </div>
+
+      <!-- Dashboard Main Body -->
+      <div class="row">
+        <div class="dashboard-container">
+          <!-- Flash Cards -->
+          <div class="row">
+            <div class="col-12 col-lg-4 card-wrapper">
+              <div class="card flash-card" id="diamond-back">
+                <img
+                  class="align-top"
+                  src="./assets/dist/icons/diamond-icon.svg"
+                  alt="diamond-svg"
+                />
+                <div class="details">
+                  <span class="figures"> 0.5340393 </span>
+                  <span class="sub-heading"> Confirmed Balance </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 card-wrapper">
+              <div class="card flash-card" id="loading-back">
+                <img
+                  src="./assets/dist/icons/loading-icon.svg"
+                  alt="loading-svg"
+                />
+                <div class="details">
+                  <span class="figures"> 2349002 </span>
+                  <span class="sub-heading"> Unconfirmed Balance </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 card-wrapper">
+              <div class="card flash-card" id="rupee-back">
+                <img src="./assets/dist/icons/rupee-icon.svg" alt="rupee-svg" />
+                <div class="details">
+                  <span class="figures"> 5739200 </span>
+                  <span class="sub-heading"> Total wallet worth </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flash Cards Ends -->
+
+          <!-- Detailed Cards Starts -->
+
+          <div class="row">
+            <div class="col-12 col-lg-6 card-wrapper">
+              <!-- Receive Cryptocurrencies Starts -->
+
+              <div class="card detailed-card">
+                <div
+                  class="header d-flex flex-row align-self-center justify-content-between"
+                >
+                  <div class="heading">Receive Cryptocurrencies</div>
+                </div>
+                <div class="body">
+                  <div class="list-unstyled mini-form-list d-flex flex-column">
+                    <div class="col-12 hash-text">
+                      <input
+                        type="text"
+                        placeholder="38dnkf203e32j9dj239cnwj122jd2d328..."
+                      />
+                    </div>
+                    <div
+                      class="col-12 d-flex flex-row justify-content-between action-div"
+                    >
+                      <div class="col-4 d-flex btn-container">
+                        <button>COPY CODE <i class="far fa-clone"></i></button>
+                      </div>
+                      <div class="col-4 d-flex btn-container">
+                        <button>
+                          SHARE CODE <i class="fas fa-share-alt"></i>
+                        </button>
+                      </div>
+                      <div class="col-4 d-flex btn-container">
+                        <button>QR CODE <i class="fas fa-qrcode"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Receive Cryptocurrencies Ends -->
+
+              <!-- Received Transactions Starts -->
+
+              <div class="card detailed-card">
+                <div
+                  class="header d-flex flex-row align-self-center justify-content-between"
+                >
+                  <div class="heading">Received Transactions</div>
+                  <div class="arrow-div">
+                    <button><i class="fas fa-chevron-circle-left"></i></button>
+                    <button><i class="fas fa-chevron-circle-right"></i></button>
+                  </div>
+                </div>
+                <div class="body">
+                  <ul class="list-unstyled transection-list d-flex flex-column">
+                    <li class="col-12 d-flex flex-row align-middle">
+                      <div class="tn-info col-5">
+                        <span class="id">Tn #120304</span>
+                        <span class="date">12/01/18</span>
+                      </div>
+                      <div class="tn-detail col-7">
+                        <span class="price"
+                          ><i class="fas fa-plus"></i> 0.00000234 BTC</span
+                        >
+                        <span class="hash">
+                          38dnkf203e32j9dj239cnwj122jd2d328
+                        </span>
+                      </div>
+                    </li>
+                    <li class="col-12 d-flex flex-row align-middle">
+                      <div class="tn-info col-5">
+                        <span class="id">Tn #120304</span>
+                        <span class="date">12/01/18</span>
+                      </div>
+                      <div class="tn-detail col-7">
+                        <span class="price"
+                          ><i class="fas fa-plus"></i> 0.00000234 BTC</span
+                        >
+                        <span class="hash">
+                          38dnkf203e32j9dj239cnwj122jd2d328
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Received Transactions Ends -->
+            </div>
+            <div class="col-12 col-lg-6 card-wrapper">
+              <!-- Send Cryptocurrencies Starts -->
+
+              <div class="card detailed-card">
+                <div
+                  class="header d-flex flex-row align-self-center justify-content-between"
+                >
+                  <div class="heading">Send Cryptocurrencies</div>
+                </div>
+                <div class="body">
+                  <div class="list-unstyled mini-form-list d-flex flex-column">
+                    <div class="col-12 title-text-box form-child">
+                      <div class="input-container">
+                        <span class="label"> TO: </span>
+                        <input
+                          type="text"
+                          placeholder="38dnkf203e32j9dj239cnwj122jd2d328..."
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="col-12 d-flex flex-row justify-content-between form-child"
+                    >
+                      <div class="col-6 title-text-box">
+                        <div class="input-container">
+                          <span class="label"> BTC: </span>
+                          <input type="text" placeholder="0.0050" />
+                        </div>
+                      </div>
+                      <div class="col-6 title-text-box">
+                        <div class="input-container">
+                          <span class="label"> INR: </span>
+                          <input type="text" placeholder="8000" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-12 d-flex flex-row justify-content-between form-child"
+                    >
+                      <div class="col-12 title-text-box">
+                        <div class="input-container">
+                          <span class="label"> NOTE: </span>
+                          <textarea
+                            name=""
+                            id=""
+                            placeholder="Add a note"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 form-child">
+                      <button class="mini-form-btn align-middle">
+                        SEND BITCOIN
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- send Cryptocurrencies Ends -->
+
+              <!-- Sent Transactions Starts -->
+
+              <div class="card detailed-card">
+                <div
+                  class="header d-flex flex-row align-self-center justify-content-between"
+                >
+                  <div class="heading">Sent Transactions</div>
+                  <div class="arrow-div">
+                    <button><i class="fas fa-chevron-circle-left"></i></button>
+                    <button><i class="fas fa-chevron-circle-right"></i></button>
+                  </div>
+                </div>
+                <div class="body">
+                  <ul class="list-unstyled transection-list d-flex flex-column">
+                    <li class="col-12 d-flex flex-row align-middle">
+                      <div class="tn-info col-5">
+                        <span class="id">Tn #120304</span>
+                        <span class="date">12/01/18</span>
+                      </div>
+                      <div class="tn-detail col-7">
+                        <span class="price"
+                          ><i class="fas fa-plus"></i> 0.00000234 BTC</span
+                        >
+                        <span class="hash">
+                          38dnkf203e32j9dj239cnwj122jd2d328
+                        </span>
+                      </div>
+                    </li>
+                    <li class="col-12 d-flex flex-row align-middle">
+                      <div class="tn-info col-5">
+                        <span class="id">Tn #120304</span>
+                        <span class="date">12/01/18</span>
+                      </div>
+                      <div class="tn-detail col-7">
+                        <span class="price"
+                          ><i class="fas fa-plus"></i> 0.00000234 BTC</span
+                        >
+                        <span class="hash">
+                          38dnkf203e32j9dj239cnwj122jd2d328
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Sent Transactions Ends -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script> -->
+    <script>
+      $(document).ready(() => {
+        $("#slide-btn").on("click", () => {
+          $("header").toggleClass("header-slide");
+          $("#slide-btn i").toggleClass("icon-rotate");
+          $(".header-logo").toggleClass("logo-hide");
+          $(".slidebar").toggleClass("slidebar-slide");
+          $(".dashboard-wrapper").toggleClass("dashboard-slide");
+        });
+      });
+    </script>
+  </body>
+</html>

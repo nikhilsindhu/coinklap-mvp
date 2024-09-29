@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/dist/styles/main.css" />
+    <link rel="stylesheet" href="./assets/dist/styles/dashboard.css" />
+    <link rel="stylesheet" href="./assets/dist/styles/mediaquery.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+      integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+      crossorigin="anonymous"
+    />
+
+    <title>Dashboard | Home</title>
+  </head>
+  <body>
+    <!-- Sidebar Starts -->
+    <div class="slidebar">
+      <div class="container">
+        <div class="brand text-center">Coinklap</div>
+        <nav>
+          <ul class="list-unstyled d-flex flex-column">
+            <li>
+              <a href="dashboard.html" class="nav-link"
+                ><i class="fas fa-home"></i><span>Dashboard</span></a
+              >
+            </li>
+            <li>
+              <a href="dashboard-exchange.html" class="nav-link"
+                ><i class="fas fa-exchange-alt"></i><span>Exchange</span></a
+              >
+            </li>
+            <li>
+              <a href="dashboard-deal1.html" class="nav-link active-sidelink"
+                ><i class="fas fa-file-alt"></i><span>My Deals</span></a
+              >
+            </li>
+            <li>
+              <a href="dashboard-wallet.html" class="nav-link"
+                ><i class="fas fa-piggy-bank"></i><span>My Wallet</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Dashboard Starts -->
+
+    <div class="dashboard-wrapper">
+      <div class="container-fluid">
+        <!-- Top header -->
+
+        <div class="row">
+          <header>
+            <nav class="d-flex flex-row justify-content-between">
+              <div class="left-sec d-flex flex-row">
+                <div class="align-self-center hamburger" id="slide-btn">
+                  <i class="fas fa-chevron-circle-left"></i>
+                </div>
+                <div class="align-self-center header-logo logo-hide">
+                  <a href="./dashboard.html"
+                    ><img src="./assets/dist/images/logo-color.png" alt=""
+                  /></a>
+                </div>
+              </div>
+              <div class="mid-sec align-self-center">
+                <i class="fas fa-file-alt"></i>
+                My Deals
+              </div>
+              <div class="right-sec d-flex flex-row align-self-center">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="menu-btn"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="./assets/dist/images/avatar.jpg"
+                      alt="User Avatar"
+                    />
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right menu-li">
+                    <button
+                      class="dropdown-item"
+                      type="button"
+                      onclick="window.location.href = '/dashboard-profile.html';"
+                    >
+                      <i class="fas fa-user"></i>Profile
+                    </button>
+                    <button class="dropdown-item" type="button">
+                      <i class="fas fa-cog"></i>Setting
+                    </button>
+                    <button
+                      class="dropdown-item"
+                      type="button"
+                      onclick="window.location.href = '/index.html';"
+                    >
+                      <i class="fas fa-sign-out-alt"></i>Logout
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </header>
+        </div>
+
+        <!-- Dashboard Main Body -->
+        <div class="row">
+          <div class="dashboard-container">
+            <!-- Detailed Cards Starts -->
+
+            <div class="row">
+              <div class="col-12 col-lg-6 card-wrapper">
+                <!-- Deal Cards Starts -->
+
+                <div class="card simple-card">
+                  <div class="deal-detail row">
+                    <div class="crypto col-md-4">
+                      <span class="subheading"> Crypto </span>
+                      <span class="figures">
+                        <i class="fab fa-btc"></i>0.0005
+                      </span>
+                    </div>
+                    <div class="fiat col-md-4">
+                      <span class="subheading"> Fiat </span>
+                      <span class="figures">
+                        <i class="fas fa-rupee-sign"></i>12500
+                      </span>
+                    </div>
+                    <div class="deal-rate align-self-end col-md-4">
+                      @60,59,283/BTC
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Deal Cards Ends -->
+
+                <!-- Recent Transactions Starts -->
+
+                <div class="card detailed-card">
+                  <div
+                    class="header d-flex flex-row align-self-center justify-content-between"
+                  >
+                    <div class="heading">Trade info</div>
+                  </div>
+                  <div class="body">
+                    <ul
+                      class="list-unstyled transection-list d-flex flex-column"
+                    >
+                      <li class="col-12 d-flex flex-row align-middle">
+                        <div class="tr-info col-6">
+                          <span class="sub-heading">Trade #</span>
+                          <span class="val">2323</span>
+                        </div>
+                        <div class="tr-detail col-6">
+                          <span class="sub-heading">Reference</span>
+                          <span class="val"> cew923ehj23 </span>
+                        </div>
+                      </li>
+                      <li class="col-12 d-flex flex-row align-middle">
+                        <div class="tr-info col-6">
+                          <span class="sub-heading">Status</span>
+                          <span class="val" style="font-weight: 800">OPEN</span>
+                        </div>
+                        <div class="tr-detail col-6">
+                          <span class="sub-heading">Type</span>
+                          <span class="val"> Selling </span>
+                        </div>
+                      </li>
+                      <li class="col-12 d-flex flex-row align-middle">
+                        <div class="tr-info col-6">
+                          <span class="sub-heading">Payment method</span>
+                          <span class="val">Bank transfer</span>
+                        </div>
+                        <div class="tr-detail col-6">
+                          <span class="sub-heading">Payment window</span>
+                          <span class="val"> 90 minutes </span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Recent Transactions Ends -->
+
+                <!-- Terms of trade Starts -->
+
+                <div class="card detailed-card">
+                  <div
+                    class="header d-flex flex-row align-self-center justify-content-between"
+                  >
+                    <div class="heading">Terms of trade</div>
+                  </div>
+                  <div class="body">
+                    <ul
+                      class="list-unstyled trade-terms-list d-flex flex-column"
+                    >
+                      <li class="col-12 d-flex flex-row align-middle">
+                        Please share your whatsapp no. in message after placing
+                        order to coordinate the details. Bitcoins for cash INR.
+                        Money will be counted and checked. Coins will be sent
+                        then and you can leave.
+                      </li>
+                      <li class="col-12 d-flex flex-row align-middle">
+                        Floating price setting: The BTC/INR exchange rate will
+                        float with the market while the trade is open. The
+                        trading price is determined by localbitcoin at the time
+                        of bitcoin release basis listing margin and market
+                        price.
+                      </li>
+                      <li class="col-12 d-flex flex-row align-middle">
+                        Meeting preferences: Mall or public place.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Terms of trade Ends -->
+              </div>
+              <div class="col-12 col-lg-6 card-wrapper">
+                <!-- Notification Cards Starts -->
+                <div class="card notification-card">
+                  <i class="far fa-check-circle"></i>
+                  <div class="notification-detail d-flex flex-column">
+                    <div class="notification">
+                      This is a new trade, you can cancel it or mark payment
+                      done.
+                    </div>
+                    <div
+                      class="action-div d-flex flex-row justify-content-between"
+                    >
+                      <button class="white">Mark payment done</button>
+                      <button class="red">Cancel trade</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Deal Cards Ends -->
+
+                <!-- My Wallet Starts -->
+
+                <div class="card chat-card">
+                  <div class="header d-flex flex-row justify-content-between">
+                    <div class="user-detail align-self-center">
+                      <div class="user-img">
+                        <img src="./assets/dist/images/avatar.jpg" alt="" />
+                      </div>
+                      <div class="user-info">
+                        <span class="name"> SumitH (100, 100%) </span>
+                        <span class="time-stamp"> Seen: 10m ago </span>
+                      </div>
+                    </div>
+                    <div class="button-div d-flex flex-row align-self-center">
+                      <button><i class="fas fa-phone"></i></button>
+                      <button><i class="fas fa-envelope"></i></button>
+                    </div>
+                  </div>
+                  <div class="body">
+                    <ul class="list-unstyled msg-list d-flex flex-column">
+                      <li class="col-12 response">
+                        <div class="user-name">SumitH</div>
+                        <ul class="d-flex flex-column msg-box">
+                          <li>
+                            <div class="msg-body">Hey! I am Sumit.</div>
+                            <div class="time-stamp">12/6/17, 2:22 pm</div>
+                          </li>
+
+                          <li>
+                            <div class="msg-body">
+                              Hey! I am Sumit. From Mumbai. Where are you from?
+                            </div>
+                            <div class="time-stamp">12/6/17, 2:22 pm</div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="col-12 request">
+                        <span class="user-name"> SumitH </span>
+                        <ul class="d-flex flex-column msg-box">
+                          <li>
+                            <div class="msg-body">
+                              Hey! I am Sumit. From Mumbai. Where are you from?
+                            </div>
+                            <div class="time-stamp">12/6/17, 2:22 pm</div>
+                          </li>
+
+                          <li>
+                            <div class="msg-body">
+                              Hey! I am Sumit. From Mumbai. Where are you from?
+                            </div>
+                            <div class="time-stamp">12/6/17, 2:22 pm</div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <form action="">
+                      <div class="d-flex flex-row justify-content-between">
+                        <div class="text-input">
+                          <input
+                            type="text"
+                            placeholder="Type your message here..."
+                          />
+                        </div>
+                        <div class="submit-btn">
+                          <button type="submit">SEND</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <!-- My Wallet Ends -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script> -->
+    <script>
+      $(document).ready(() => {
+        $("#slide-btn").on("click", () => {
+          $("header").toggleClass("header-slide");
+          $("#slide-btn i").toggleClass("icon-rotate");
+          $(".header-logo").toggleClass("logo-hide");
+          $(".slidebar").toggleClass("slidebar-slide");
+          $(".dashboard-wrapper").toggleClass("dashboard-slide");
+        });
+      });
+    </script>
+  </body>
+</html>

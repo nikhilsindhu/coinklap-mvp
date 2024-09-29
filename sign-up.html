@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/dist/styles/main.css" />
+    <link rel="stylesheet" href="./assets/dist/styles/signin.css" />
+    <link rel="stylesheet" href="./assets/dist/styles/mediaquery.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+      integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+      crossorigin="anonymous"
+    />
+
+    <title>Dashboard | Home</title>
+  </head>
+  <body>
+    <div class="sign-in-container">
+      <div class="container">
+        <div class="row">
+          <nav class="col-12 d-flex flex-row justify-content-between">
+            <div class="brand">coinklap</div>
+            <div class="query align-self-center">HOW IT WORKS?</div>
+          </nav>
+
+          <div class="col-md-10 col-lg-8 col-xl-6 mx-auto hero-container">
+            <div class="hero-title text-center">Welcome!</div>
+            <div class="col-lg-10 mx-auto hero-form">
+              <form
+                onsubmit="event.preventDefault(); event.stopPropagation(); window.location.href = '/dashboard.html';"
+              >
+                <div class="text-field-container">
+                  <label for="name">FIRST &amp; LAST NAME</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Nikhil Sindhu"
+                  />
+                </div>
+                <div class="text-field-container">
+                  <label for="username">USERNAME OR E-MAIL</label>
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="hello@coinklap.io"
+                  />
+                </div>
+                <div class="text-field-container mb-0">
+                  <label for="password">PASSWORD</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="***********"
+                  />
+                </div>
+
+                <div class="d-flex flex-column hero-btn-box mx-auto">
+                  <button class="btn-white">SIGN UP</button>
+                  <button class="btn-blue">OLD USER? LOG IN</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script> -->
+    <script>
+      $(document).ready(() => {
+        // $('#slide-btn').on('click',()=>{
+        //     $('header').toggleClass('header-slide');
+        //     $('#slide-btn i').toggleClass('icon-rotate');
+        //     $('.header-logo').toggleClass('logo-hide');
+        //     $('.slidebar').toggleClass('slidebar-slide');
+        //     $('.dashboard-wrapper').toggleClass('dashboard-slide');
+        // });
+      });
+    </script>
+  </body>
+</html>

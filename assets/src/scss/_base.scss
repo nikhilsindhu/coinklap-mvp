@@ -1,0 +1,30 @@
+@import "fonts";
+
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    font-family: 'Gilroy', sans-serif, arial !important;
+    background: #fdfdfd;
+}
+
+
+button,
+input,
+textarea{
+    border: none;
+    outline: none !important;
+}
+
+a:hover,
+a:active{
+    text-decoration: none;
+}
